@@ -60,3 +60,37 @@ body {
   line-height: 64px;
   text-align: center;
 }
+
+.NavBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: sticky;
+  height: 100px;
+  background: linear-gradient(180deg, #9587E8 0%, rgba(194, 118, 249, 0.74) 100%);
+  -webkit-box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.NavBarLogoPic {
+  margin-left: 25px;
+  transform: rotate(-10.95deg);
+  width: 70px;
+  height: 70px;
+}
+
+.NavBarLink {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  /* identical to box height */
+
+  text-align: center;
+}
+
+.NavBarLinkText {
+  margin: 25px;
+  color: #FFFFFF !important;
+}
