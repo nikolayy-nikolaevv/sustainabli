@@ -1,3 +1,62 @@
+@font-face {
+  font-family: Comfortaa;
+  src: url('./assets/fonts/Comfortaa-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: Lexend;
+  src: url('./assets/fonts/Lexend-VariableFont_wght.ttf');
+}
+
 body {
-	background-color: #4a456a;
+  margin: 0;
+  padding: 0;
+  background-color: #4a456a;
+}
+
+.LandingComponent {
+  margin-top: 0;
+  height: 100vh;
+  background: radial-gradient(50% 50% at 50% 50%, #B242E3 0%, #A553CC 33.33%, #6153BD 100%);
+}
+
+.LandingHeader {
+  display: block;
+  position: absolute;
+  top: 30vh;
+  width: 100vw;
+}
+
+.LandingHeaderTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.LandingHeaderTitleText {
+  color: #fafafa;
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 256px;
+  line-height: 256px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.LandingHeaderLogoPic {
+  transform: rotate(-10.95deg);
+  width: 224px;
+  height: 224px;
+}
+
+.LandingHeaderSubTitleText {
+  margin-top: 5vh;
+  color: #fafafa;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  text-align: center;
 }

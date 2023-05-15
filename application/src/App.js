@@ -1,8 +1,9 @@
 import './App.css';
+import LandingComponent from './components/LandingComponent'
 
 function App() {
 	return (
-		<div className="App"></div>
+		<LandingComponent />
 	);
 }
 
