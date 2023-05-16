@@ -16,10 +16,14 @@ body {
 }
 
 .LandingComponent {
-  overflow: hidden;
   margin-top: 0;
   height: 100vh;
   background: radial-gradient(50% 50% at 50% 50%, #B242E3 0%, #A553CC 33.33%, #6153BD 100%);
+}
+
+.SecondComponent {
+  height: 100vh;
+  background: linear-gradient(180deg, #6153BE 0%, #4A456A 100%);
 }
 
 .LandingHeader {
