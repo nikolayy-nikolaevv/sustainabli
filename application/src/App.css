@@ -204,21 +204,20 @@ body {
 .LeftBox .Ornament1{
   height: 1vw;
   width: 25vw;
-  border-bottom-left-radius: 2vw;
-  transform: translateX(45vw);
+  border-bottom-right-radius: 2vw;
 }
 
 .LeftBox .Ornament2{
   width: 1vw;
   min-height: 6vh;
-  border-bottom-left-radius: 2vw; 
-  transform: translateX(69vw)
+  border-bottom-right-radius: 2vw; 
 }
 
 .LeftBox .Ornament3{
   height: 1vw;
   width: 25vw;
-  border-top-right-radius: 2vw;
+  border-top-left-radius: 2vw;
+  transform: translateX(45vw)
 }
 
 .RightBox{
@@ -228,18 +227,21 @@ body {
 .RightBox .Ornament1{
   height: 1vw;
   width: 25vw;
-  border-bottom-right-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  transform: translateX(45vw);
 }
 
 .RightBox .Ornament2{
   width: 1vw;
   min-height: 6vh;
-  border-bottom-right-radius: 2vw; 
+  border-bottom-left-radius: 2vw; 
+  transform: translateX(69vw)
 }
 
 .RightBox .Ornament3{
   height: 1vw;
   width: 25vw;
-  border-top-left-radius: 2vw;
-  transform: translateX(45vw)
+  border-top-right-radius: 2vw;
 }
+
+

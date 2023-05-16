@@ -14,9 +14,9 @@ function App() {
 			<SecondComponent />
 			{/* <QuizSlider /> */}
 			<TextBox primaryColor = "#F2B34A" secondaryColor = "#6153BE" titleColor = "#1E1E1E" title = "Sample" contentColor = "#1E1E1E"
-			content = "Lorem ipsum" boxType = "LeftBox"/>
-			<TextBox primaryColor = "#2E2B42" secondaryColor = "#F96738" titleColor = "#F2B34A" title = "Sample" contentColor = "#FFFFFF"
 			content = "Lorem ipsum" boxType = "RightBox"/>
+			<TextBox primaryColor = "#2E2B42" secondaryColor = "#F96738" titleColor = "#F2B34A" title = "Sample" contentColor = "#FFFFFF"
+			content = "Lorem ipsum" boxType = "LeftBox"/>
 		</>
 	);
 }
