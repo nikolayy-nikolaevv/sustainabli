@@ -3,8 +3,17 @@ import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../assets/images/logo.png';
 
 
-
 export default function NavBar() {
+    window.addEventListener("scroll",function(event){
+        const batteryLevel = document.getElementById('batteryLevel');
+        const scrollPos = window.scrollY;
+        const batteryProgress = 10 + scrollPos / 100;
+        batteryLevel.style.width = batteryProgress + "%";
+        const colorStart = "rgb(" + (237 - batteryProgress * 1.5) + ","+(118 + batteryProgress * 0.4)+",80)";
+        const colorEnd = "rgb(" + (242 - batteryProgress * 1.5) + ","+(179 + batteryProgress * 0.4)+",74)";
+        batteryLevel.style.backgroundImage = "linear-gradient(to right, " + colorStart + ", " + colorEnd + ")";
+
+    });
     return (
             <Navbar className="NavBar" fixed="top">
                 <Navbar.Brand href="/" className="NavBarLogo">
@@ -32,16 +41,4 @@ export default function NavBar() {
 
     );
 }
-window.addEventListener("scroll",function(event){
-    var scroll = this.scrollY;
-    const BL = document.getElementById('batteryLevel');
-    if(scroll > 700){
-        BL.style.backgroundImage = 'linear-gradient(to right, #D1F24B, #96FB47)';
-        BL.style.width = "3vw";
-    }
-    if(scroll<700){
-        BL.style.backgroundImage = 'linear-gradient(to right, #ED7650, #F2B34A)';
-        BL.style.width = "2vw";
 
-    }
-});

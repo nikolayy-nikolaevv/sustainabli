@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LandingComponent from './components/LandingComponent'
 import NavBar from './components/NavBar';
-import QuizSlide from "./components/QuizSlide";
+import QuizSlide from "./components/QuizSlider";
 
 function App() {
 	return (

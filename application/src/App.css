@@ -11,8 +11,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #4a456a;
-  height: 900vh;
+  background-color: #4A456A;
+  height: 1000vh;
 }
 
 .LandingComponent {
@@ -93,7 +93,6 @@ body {
   margin: 0vw 2vw;
   color: #FFFFFF !important;
 }
-
 .batteryContainer {
   display: -webkit-box;
   display: -moz-box;
@@ -106,42 +105,30 @@ body {
 }
 
 .batteryOuter {
-  border-radius: 1vw;
+  border-radius: 0.6vw;
   background-image: linear-gradient(#6E65AA, #B1A8EA, #6E65AA);
-  width: 7vw;
+  width: 9vw;
   height: 5vw;
+  overflow: hidden;
 }
 
 .batteryBump {
-  border-bottom-right-radius: 6vw;
-  border-top-right-radius: 6vw;
+  border-radius: 0 6vw 6vw 0;
   background-color: #4A456A;
   width: 0.4vh;
-  height: 3vh;
+  height: 5vh;
   margin-right: 1vh;
 }
 
 #batteryLevel {
-  border-bottom-left-radius: 1vw;
-  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 0.6vw;
+  border-top-left-radius: 0.6vw;
   background-image: linear-gradient(to right, #ED7650, #F2B34A);
-  width: 2vw;
   height: 5vw;
+  width: 10%;
 }
 
-.NavBarLink {
-  font-family: 'Lexend';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.5vw;
-  line-height: 2vw;
-  text-align: center;
-}
 
-.NavBarLinkText {
-  margin: 0 2vw;
-  color: #FFFFFF !important;
-}
 
 .AtomSpinner {
   display: inline-block;
@@ -155,4 +142,7 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+.QuizSlider{
+  background: #4A456A;
 }
