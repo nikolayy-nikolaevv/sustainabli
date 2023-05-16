@@ -5,6 +5,8 @@ import Logo from '../assets/images/logo.png';
 import Battery from '../assets/images/ScrollBattery.svg';
 import {NavbarBrand} from "react-bootstrap";
 
+
+
 export default function NavBar() {
     return (
             <Navbar className="NavBar" fixed="top">
@@ -22,12 +24,27 @@ export default function NavBar() {
                     <Nav.Link className="NavBarLinkText" href="#participate">Participate</Nav.Link>
                 </Nav>
                 <div className="batteryContainer">
+
                     <div className="batteryOuter">
                         <div id="batteryLevel"></div>
                     </div>
                     <div className="batteryBump"></div>
                 </div>
+
             </Navbar>
 
     );
 }
+window.addEventListener("scroll",function(event){
+    var scroll = this.scrollY;
+    const BL = document.getElementById('batteryLevel');
+    if(scroll > 700){
+        BL.style.backgroundImage = 'linear-gradient(to right, #D1F24B, #96FB47)';
+        BL.style.width = "3vw";
+    }
+    if(scroll<700){
+        BL.style.backgroundImage = 'linear-gradient(to right, #ED7650, #F2B34A)';
+        BL.style.width = "2vw";
+
+    }
+});
