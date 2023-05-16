@@ -12,20 +12,20 @@ body {
   margin: 0;
   padding: 0;
   background-color: #4a456a;
+  height: 900vh;
 }
 
 .LandingComponent {
   margin-top: 0;
   height: 100vh;
   background: radial-gradient(50% 50% at 50% 50%, #B242E3 0%, #A553CC 33.33%, #6153BD 100%);
-
 }
 
 .LandingHeader {
   display: block;
   position: absolute;
   top: 30vh;
-  width: 100vw;
+  width: 99vw;
 }
 
 .LandingHeaderTitle {
@@ -108,7 +108,7 @@ body {
 
 .batteryOuter {
   border-radius: 1vw;
-  background-image: linear-gradient(#6E65AA,#B1A8EA, #6E65AA);
+  background-image: linear-gradient(#6E65AA, #B1A8EA, #6E65AA);
   width: 7vw;
   height: 5vw;
 }
