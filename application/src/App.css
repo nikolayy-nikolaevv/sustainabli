@@ -25,7 +25,7 @@ body {
   display: block;
   position: absolute;
   top: 30vh;
-  width: 99vw;
+  width: 100%;
 }
 
 .LandingHeaderTitle {
@@ -40,7 +40,6 @@ body {
   font-weight: 700;
   font-size: 13vw;
   line-height: 13vw;
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.05em;
 }
@@ -128,9 +127,7 @@ body {
   background-image: linear-gradient(to right, #ED7650, #F2B34A);
   width: 2vw;
   height: 5vw;
-
 }
-
 
 .NavBarLink {
   font-family: 'Lexend';
@@ -138,13 +135,11 @@ body {
   font-weight: 700;
   font-size: 1.5vw;
   line-height: 2vw;
-  /* identical to box height */
-
   text-align: center;
 }
 
 .NavBarLinkText {
-  margin: 3vw;
+  margin: 0 2vw;
   color: #FFFFFF !important;
 }
 
