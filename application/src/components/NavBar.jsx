@@ -2,6 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../assets/images/logo.png';
+import Battery from '../assets/images/ScrollBattery.svg';
+import {NavbarBrand} from "react-bootstrap";
 
 export default function NavBar() {
     return (
@@ -19,6 +21,13 @@ export default function NavBar() {
                     <Nav.Link className="NavBarLinkText" href="#what-you-can-do">What You Can Do</Nav.Link>
                     <Nav.Link className="NavBarLinkText" href="#participate">Participate</Nav.Link>
                 </Nav>
+                <div className="batteryContainer">
+                    <div className="batteryOuter">
+                        <div id="batteryLevel"></div>
+                    </div>
+                    <div className="batteryBump"></div>
+                </div>
             </Navbar>
+
     );
 }
