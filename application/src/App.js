@@ -4,6 +4,7 @@ import LandingComponent from './components/LandingComponent';
 import SecondComponent from './components/SecondComponent';
 import NavBar from './components/NavBar';
 // import QuizSlider from "./components/QuizSlider";
+import TextBox from './components/TextBox';
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<LandingComponent />
 			<SecondComponent />
 			{/* <QuizSlider /> */}
+			<TextBox primaryColor = '#F2B34A' title = "Sample" content = "Lorem ipsum"/>
 		</>
 	);
 }
