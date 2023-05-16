@@ -64,6 +64,7 @@ body {
 
 .NavBar {
   position: absolute;
+  width: 100vw;
   top: 0;
   left: 0;
   position: sticky;
@@ -80,12 +81,27 @@ body {
   height: 5vw;
 }
 
+.NavBarLink {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  text-align: center;
+}
+
+.NavBarLinkText {
+  margin: 0vw 2vw;
+  color: #FFFFFF !important;
+}
+
 .batteryContainer {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  margin-left: 5vw;
   flex-direction: row;
   align-items: center;
 }
@@ -112,22 +128,4 @@ body {
   background-image: linear-gradient(to right, #ED7650, #F2B34A);
   width: 2vw;
   height: 5vw;
-}
-
-
-
-.NavBarLink {
-  font-family: 'Lexend';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.5vw;
-  line-height: 2vw;
-  /* identical to box height */
-
-  text-align: center;
-}
-
-.NavBarLinkText {
-  margin: 3vw;
-  color: #FFFFFF !important;
 }
