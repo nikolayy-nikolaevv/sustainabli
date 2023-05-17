@@ -4,7 +4,7 @@ export default function LandingHeader() {
     return (
         <div className="LandingHeader">
             <div className="LandingHeaderTitle">
-                <div className="LandingHeaderTitleText">Sustainab</div>
+                <div className="LandingHeaderTitleText" itemProp='InnerShadowText'>Sustainab</div>
                 <div className="LandingHeaderLogo">
                     <img className="LandingHeaderLogoPic" src={Logo} />
                 </div>

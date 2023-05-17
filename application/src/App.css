@@ -51,6 +51,16 @@ body {
   letter-spacing: 0.05em;
 }
 
+.LandingHeaderTitleText[itemprop="InnerShadowText"]{
+  background-color: rgb(47, 47, 47);
+  color: transparent;
+  text-shadow: 0 0.5vh 1vh rgba(255, 255, 255, 0.2);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  filter: brightness(3);
+}
+
 .LandingHeaderLogoPic {
   transform: rotate(-10.95deg) translateY(-20%);
   width: auto;
@@ -246,5 +256,4 @@ body {
   width: 25vw;
   border-top-right-radius: 2vw;
 }
-
 
