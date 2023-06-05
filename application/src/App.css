@@ -133,7 +133,8 @@ body {
 .batteryBump {
   border-radius: 0 6vw 6vw 0;
   background-color: #4A456A;
-  width: 0.4vh;
+  height: 4vh;
+  width: 0.5vh;
   margin-right: 1vh;
 }
 
