@@ -224,7 +224,7 @@ body {
 	width: 70vw;
 	position: absolute;
 	left: 0;
-	top: 200vw;
+	top: 400vh;
 }
 
 .LeftBox .Ornament1 {
@@ -248,7 +248,7 @@ body {
 
 .RightBox {
 	position: absolute;
-	top: 100vw;
+	top: 190vh;
 	width: 70vw;
 	right: 0;
 }
@@ -271,4 +271,20 @@ body {
 	height: 1vw;
 	width: 25vw;
 	border-top-right-radius: 2vw;
+}
+
+.RightTextImageContainer {
+	position: absolute;
+	top: 190vh;
+	left: 2vw;
+}
+
+.LeftTextImageContainer {
+	position: absolute;
+	top: 390vh;
+	right: 2vw;
+}
+
+.TextBoxImage {
+	width: 35vw;
 }
