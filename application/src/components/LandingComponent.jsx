@@ -7,13 +7,13 @@ export default function LandingComponent() {
     return (
         <div className="LandingComponent">
             <div className="AtomTop AtomSpinner">
-                <img src={AtomTop} className="AtomImage"/>
+                <img src={AtomTop} className="AtomImage" alt="Spinning Atom"/>
             </div>
             <div className="AtomMiddle AtomSpinner">
-                <img src={AtomMiddle} className="AtomImage"/>
+                <img src={AtomMiddle} className="AtomImage" alt="Spinning Atom"/>
             </div>
             <div className="AtomBottom AtomSpinner">
-                <img src={AtomBottom} className="AtomImage"/>
+                <img src={AtomBottom} className="AtomImage" alt="Spinning Atom"/>
             </div>
             <LandingHeader />
         </div>

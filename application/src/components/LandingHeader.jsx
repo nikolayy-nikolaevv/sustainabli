@@ -6,7 +6,7 @@ export default function LandingHeader() {
             <div className="LandingHeaderTitle">
                 <div className="LandingHeaderTitleText" itemProp='InnerShadowText'>Sustainab</div>
                 <div className="LandingHeaderLogo">
-                    <img className="LandingHeaderLogoPic" src={Logo} />
+                    <img className="LandingHeaderLogoPic" src={Logo} alt="Periodic Table Li Logo"/>
                 </div>
             </div>
             <div className="LandingHeaderSubTitle">
