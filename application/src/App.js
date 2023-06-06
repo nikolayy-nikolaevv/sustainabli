@@ -5,6 +5,7 @@ import SecondComponent from './components/SecondComponent';
 import NavBar from './components/NavBar';
 // import QuizSlider from "./components/QuizSlider";
 import TextBox from './components/TextBox';
+import Battery from './components/Battery';
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 			content = "Lorem ipsum" boxType = "RightBox"/>
 			<TextBox primaryColor = "#2E2B42" secondaryColor = "#F96738" titleColor = "#F2B34A" title = "Hubba Bubba" contentColor = "#FFFFFF"
 			content = "Lorem ipsum" boxType = "LeftBox"/>
+			<Battery />
 		</>
 	);
 }
