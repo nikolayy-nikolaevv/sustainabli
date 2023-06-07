@@ -288,3 +288,15 @@ body {
 .TextBoxImage {
 	width: 35vw;
 }
+
+.ChartContainer {
+	width: 100vw;
+	height: 70vh;
+	position: absolute;
+	top: 320vh;
+	background: #4a456a;
+}
+
+.Chart {
+	margin: auto;
+}
