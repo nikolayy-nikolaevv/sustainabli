@@ -38,7 +38,7 @@ const CustomLabel = ({ active, payload, label }) => {
 
 export default function LithiumUsageComponent() {
 	return (
-		<div className='ChartContainer'>
+		<div id="uses-of-lithium" className='ChartContainer'>
 			<ResponsiveContainer width="100%" className="Chart">
 				<PieChart width="50%" height="100%">
 					<Pie

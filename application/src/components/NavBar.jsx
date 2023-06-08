@@ -28,6 +28,7 @@ export default function NavBar() {
 			</Navbar.Brand>
 			<Nav className="NavBarLink">
 				<Nav.Link className="NavBarLinkText" href="#lithium-superhero">Lithium - a Superhero</Nav.Link>
+				<Nav.Link className="NavBarLinkText" href="#uses-of-lithium">Uses of Lithium</Nav.Link>
 				<Nav.Link className="NavBarLinkText" href="#dark-side-lithium">The Dark Side of Lithium</Nav.Link>
 				<Nav.Link className="NavBarLinkText" href="#what-you-can-do">What You Can Do</Nav.Link>
 				<Nav.Link className="NavBarLinkText" href="#participate">Participate</Nav.Link>
