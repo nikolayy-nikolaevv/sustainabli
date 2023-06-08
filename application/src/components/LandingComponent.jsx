@@ -5,7 +5,7 @@ import AtomBottom from "../assets/images/atom_bottom.png";
 
 export default function LandingComponent() {
     return (
-        <div className="LandingComponent">
+        <div id="landing" className="LandingComponent">
             <div className="AtomTop AtomSpinner">
                 <img src={AtomTop} className="AtomImage" alt="Spinning Atom"/>
             </div>

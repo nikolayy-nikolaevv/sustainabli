@@ -19,7 +19,7 @@ export default function NavBar() {
 
 	return (
 		<Navbar className="NavBar" fixed="top">
-			<Navbar.Brand href="/" className="NavBarLogo">
+			<Navbar.Brand href="#landing" className="NavBarLogo">
 				<img
 					src={Logo}
 					className="NavBarLogoPic d-inline-block align-top"
