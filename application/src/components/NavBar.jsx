@@ -1,6 +1,6 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Logo from '../assets/images/logo.png';
+import Logo from '../assets/images/logo.svg';
 import { useRef, useEffect} from 'react';
 
 export default function NavBar() {
