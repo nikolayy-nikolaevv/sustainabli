@@ -66,6 +66,7 @@ body {
 }
 
 .LandingHeaderSubTitleText {
+	position: relative;
 	margin-top: 5vh;
 	color: #fafafa;
 	font-family: 'Comfortaa';
@@ -299,4 +300,8 @@ body {
 	position: relative;
 	width: 100vw;
 	height: 100vh;
+}
+
+.BatteryAnimation {
+	position: relative;
 }
