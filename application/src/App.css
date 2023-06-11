@@ -24,14 +24,12 @@ body {
 }
 
 .SecondComponent {
-	height: 100vh;
+	height: 80vh;
 	background: linear-gradient(180deg, #6153BE 0%, #4A456A 100%);
 }
 
 .LandingHeader {
-	display: block;
-	position: absolute;
-	top: 30vh;
+	padding-top: 30vh;
 	width: 100%;
 }
 
@@ -79,7 +77,6 @@ body {
 }
 
 .NavBar {
-	position: absolute;
 	width: 100vw;
 	top: 0;
 	left: 0;
@@ -226,7 +223,6 @@ body {
 	width: 70vw;
 	position: absolute;
 	left: 0;
-	top: 400vh;
 }
 
 .LeftBox .Ornament1 {
@@ -250,9 +246,8 @@ body {
 
 .RightBox {
 	position: absolute;
-	top: 190vh;
 	width: 70vw;
-	right: 0;
+	right: 0px;
 }
 
 .RightBox .Ornament1 {
@@ -277,13 +272,11 @@ body {
 
 .RightTextImageContainer {
 	position: absolute;
-	top: 190vh;
 	left: 2vw;
 }
 
 .LeftTextImageContainer {
 	position: absolute;
-	top: 390vh;
 	right: 2vw;
 }
 
@@ -294,11 +287,16 @@ body {
 .ChartContainer {
 	width: 100vw;
 	height: 70vh;
-	position: absolute;
-	top: 320vh;
+	position: relative;
 	background: #4a456a;
 }
 
 .Chart {
 	margin: auto;
+}
+
+.TextBoxContainer {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
 }
