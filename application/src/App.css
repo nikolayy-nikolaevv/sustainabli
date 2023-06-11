@@ -14,7 +14,6 @@ body {
 	background-color: #4A456A !important;
 	height: 1000vh;
 	width: 100vw;
-	overflow-x: hidden;
 }
 
 .LandingComponent {
@@ -304,4 +303,8 @@ body {
 
 .BatteryAnimation {
 	position: relative;
+}
+
+.Anchor {
+	scroll-margin-top: 5vw;
 }

@@ -17,9 +17,9 @@ export default function Battery() {
   );
 
   return (
-      <div className="BatteryAnimation">
-        <RiveComponent style={{ height: "500px" }} />
-        <button onClick={() => onClickInput.fire()}>Change Animation</button>
-      </div>
+    <div className="BatteryAnimation Anchor">
+      <RiveComponent style={{ height: "500px" }} />
+      <button onClick={() => onClickInput.fire()}>Change Animation</button>
+    </div>
   );
 }
