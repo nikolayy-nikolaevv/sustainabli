@@ -376,7 +376,6 @@ body {
 	margin: 3vw;
 	bottom: 0;
 	right: 0;
-	background-color: #4A456A;
 }
 
 .CarouselPrevButton {
@@ -384,5 +383,12 @@ body {
 	margin: 3vw;
 	bottom: 0;
 	left: 0;
+}
+
+.CarouselControl {
+	font-size: 1.3vw;
 	background-color: #4A456A;
+	border: 1px rgba(255, 255, 255, 0.5) solid;
+	padding: 0.2vw 1.5vw;
+	border-radius: 5px;
 }
