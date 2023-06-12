@@ -11,7 +11,8 @@ const data = [
 	{ name: 'Non-Rechargable Batteries', value: 1.5 },
 	{ name: 'Others', value: 10.6 },
 ];
-const COLORS = ['#f2b34a', '#f6c275', '#f7d19e', '#f6e1c7', '#f1f1f1', '#f0e9de', '#efe2cd', '#eedabb', '#ecd3a9'];
+const COLORS = ["#fd7f6f", "#7eb0d5", "#b2e061", "#bd7ebe", "#ffb55a", "#ffee65", "#beb9db", "#fdcce5", "#8bd3c7"];
+// const COLORS = ['#f2b34a', '#f6c275', '#f7d19e', '#f6e1c7', '#f1f1f1', '#f0e9de', '#efe2cd', '#eedabb', '#ecd3a9'];
 
 
 const CustomTooltip = ({ active, payload, label }) => {
@@ -39,8 +40,11 @@ const CustomLabel = ({ active, payload, label }) => {
 export default function LithiumUsageComponent() {
 	return (
 		<div id="uses-of-lithium" className='ChartContainer Anchor'>
-			<ResponsiveContainer width="100%" className="Chart">
-				<PieChart width="50%" height="100%">
+			<div className="ChartTitle">
+				<p>What exactly is Lithium used for?</p>
+			</div>
+			<ResponsiveContainer height="70%" className="Chart">
+				<PieChart>
 					<Pie
 						data={data}
 						labelLine={false}

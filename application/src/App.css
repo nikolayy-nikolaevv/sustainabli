@@ -288,9 +288,19 @@ body {
 
 .ChartContainer {
 	width: 100%;
-	height: 70vh;
+	height: 100vh;
 	position: relative;
 	background: #4a456a;
+	margin-bottom: 4vw;
+	opacity: 0.9;
+}
+
+.ChartTitle {
+	font-family: 'Lexend';
+	font-weight: bold;
+	font-size: 4vw;
+	color: #F2B34A;
+	text-align: center;
 }
 
 .Chart {
@@ -324,14 +334,14 @@ body {
 	border-style: solid;
 	border-color: #f0c06e;
 	border-width: 5vh;
-	padding: 5vh;	
+	padding: 5vh;
 }
 
 .Bubble {
 	position: absolute;
 	height: 10vh;
 	width: 10vh;
-	background-color:rgba(194, 118, 249, 0.74);
+	background-color: rgba(194, 118, 249, 0.74);
 	border-radius: 50%;
 	display: grid;
 	place-content: center;
