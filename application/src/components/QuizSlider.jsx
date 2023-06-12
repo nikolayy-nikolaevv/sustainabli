@@ -15,7 +15,7 @@ export default function QuizSlider() {
 
     useEffect(() => {
         const slides = document.getElementsByClassName("carousel-item");
-        setSlideCount(slides.length - 1 );
+        setSlideCount(slides.length - 1);
     }, []);
 
 
@@ -54,7 +54,10 @@ function Controls({ incrementSlide, decrementSlide, index, slideCount, handleSub
 
     if (index === slideCount) {
         return (
-            <button className="CarouselNextButton CarouselControl" onClick={handleSubmit}>Submit</button>
+            <>
+                <button className="CarouselPrevButton CarouselControl" onClick={decrementSlide}>Prev</button>
+                <button className="CarouselNextButton CarouselControl" onClick={handleSubmit}>Submit</button>
+            </>
         );
     }
 
