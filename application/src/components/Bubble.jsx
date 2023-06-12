@@ -1,11 +1,18 @@
-export default function Bubble({icon, content}) {
+export default function Bubble({bubbleId, icon, content, bubbleCounter, animationTrigger, onClickInput}) {
   return(
     <>
-      <div className = "Bubble">
-        <img src = {icon}></img>
-        {content}
-      </div>
-    </>
+      {bubbleId == bubbleCounter ? (
+        <div className = "Bubble" style = {{pointerEvents: 'auto'}} onClick={() => onClickInput.fire()}>
+          <img src = {icon}></img>
+          {content}
+        </div>
+        ) : (
+        <div className = "Bubble" style = {{pointerEvents: 'none'}}>
+          <img src = {icon}></img>
+          {content}
+        </div>
+        )
+      }
+    </> 
   )
-
 }
