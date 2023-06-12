@@ -273,11 +273,13 @@ body {
 }
 
 .RightTextImageContainer {
+	pointer-events: none;
 	position: absolute;
 	left: 2vw;
 }
 
 .LeftTextImageContainer {
+	pointer-events: none;
 	position: absolute;
 	right: 2vw;
 }
