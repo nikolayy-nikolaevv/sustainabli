@@ -333,6 +333,7 @@ body {
 	border-color: #f0c06e;
 	border-width: 5vh;
 	padding: 5vh;
+	overflow: hidden;
 }
 
 .Bubble {
