@@ -1,4 +1,5 @@
 import { useRive, useStateMachineInput } from "rive-react";
+import Bubble from "./Bubble";
 
 export default function Battery() {
   const STATE_MACHINE = "State Machine";
@@ -16,10 +17,16 @@ export default function Battery() {
     INPUT_NAME
   );
 
+  const text = 'Can you help your battery recover? Try lowering the temperature!'
+
   return (
     <div className="BatteryAnimation Anchor">
       <RiveComponent style={{ height: "500px" }} />
-      <button onClick={() => onClickInput.fire()}>Change Animation</button>
+      <div className = "TextBubble">
+        <p>{text}</p>
+        <button onClick={() => onClickInput.fire()}>Change Animation</button>
+      </div>
+      <Bubble content = "lol"></Bubble>
     </div>
   );
 }

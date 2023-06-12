@@ -309,3 +309,30 @@ body {
 .Anchor {
 	scroll-margin-top: 5vw;
 }
+
+.TextBubble {
+	position: absolute;
+	top: 10vh;
+	left: 60vw;
+	background-color: #F2B34A;
+	height: 30vw;
+	width: 30vw;
+	border-radius: 50%;
+	display: grid;
+	place-content: center;
+	border-style: solid;
+	border-color: #f0c06e;
+	border-width: 5vh;
+	padding: 5vh;	
+}
+
+.Bubble {
+	position: absolute;
+	height: 10vh;
+	width: 10vh;
+	background-color:rgba(194, 118, 249, 0.74);
+	border-radius: 50%;
+	display: grid;
+	place-content: center;
+	visibility: hidden;
+}
