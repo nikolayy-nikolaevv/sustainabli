@@ -10,9 +10,8 @@
 
 body {
 	margin: 0;
-	padding: 0;
+	padding: 0 0 5vw 0;
 	background-color: #4A456A !important;
-	height: 1000vh;
 	width: 100%;
 }
 
@@ -363,12 +362,14 @@ body {
 }
 
 .QuizSlider {
+	color: #ffffff;
 	opacity: 0.8;
-	background-color: #9587E8;
+	background-color: rgb(46, 43, 66, 0.75);
 	height: 70vh;
 	margin: 0 auto;
 	width: 90%;
 	position: relative;
+	border-radius: 5px;
 }
 
 .CarouselNextButton {
@@ -386,9 +387,19 @@ body {
 }
 
 .CarouselControl {
+	color: rgba(255, 255, 255, 0.8);
 	font-size: 1.3vw;
-	background-color: #4A456A;
+	background-color: rgba(74, 69, 106, 0.75);
 	border: 1px rgba(255, 255, 255, 0.5) solid;
 	padding: 0.2vw 1.5vw;
 	border-radius: 5px;
+}
+
+.CarouselControl:hover {
+	color: #ffffff;
+	font-size: 1.3vw;
+	background-color: rgba(194, 118, 249, 0.74);
+	border: 1px rgba(255, 255, 255, 0.5) solid;
+	padding: 0.2vw 1.5vw;
+	border-radius: 1px;
 }
