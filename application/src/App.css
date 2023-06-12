@@ -30,6 +30,7 @@ body {
 .LandingHeader {
 	padding-top: 30vh;
 	width: 100%;
+	position: absolute;
 }
 
 .LandingHeaderTitle {
