@@ -10,7 +10,7 @@ import oldBattery from "../assets/images/Old_battery.svg";
 export default function Battery() {
   const text1 = 'Can you help your battery recover? Try lowering the temperature!'
   const text2 = "Well done! Extreme temperatures can damage the battery and shorten its lifespan. " + 
-    "Now, get rid of the bandaid." 
+    "Now, get rid of the band-aid." 
   const text3 = "Good job! Shocks and impacts can damage your battery, so don't drop it! " + 
     "Poor little guy looks tired. Time for an energy boost!";
   const text4 = "Ahh, much better! Keep the battery between 20% and 80% and avoid fully discharging or charging it. If " +
