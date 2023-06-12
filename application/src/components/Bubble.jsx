@@ -14,7 +14,6 @@ export default function Bubble({bubbleId, icon, bubbleCounter, onClickInput, set
         <div className = "Bubble" style = {{pointerEvents: 'none', backgroundColor: `${color}`, height: `${size}`, 
         width: `${size}`, top: `${top}`, left: `${left}`}}>
           <img src = {icon}></img>
-          {content}
         </div>
         )
       }
