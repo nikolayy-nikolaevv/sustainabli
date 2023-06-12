@@ -5,8 +5,7 @@ import SecondComponent from './components/SecondComponent.jsx';
 import SuperheroComponent from './components/SuperheroComponent';
 import AntiheroComponent from './components/AntiheroComponent';
 import NavBar from './components/NavBar';
-import LithiumUsageComponent from './components/LithiumUsageComponent';
-// import QuizSlider from "./components/QuizSlider";
+import LithiumUsageComponent from './components/LithiumUsageComponent';import QuizSlider from "./components/QuizSlider";
 import Battery from './components/Battery';
 import { useState } from 'react';
 import Logo from './assets/images/logo.svg';
@@ -40,11 +39,11 @@ function App() {
 			<NavBar logo={images[currentLogo]} />
 			<LandingComponent logo={images[currentLogo]} incrementLogo={incrementLogo} decrementLogo={decrementLogo} />
 			<SecondComponent />
-			{/* <QuizSlider /> */}
 			<SuperheroComponent />
 			<LithiumUsageComponent />
 			<AntiheroComponent />
 			<Battery />
+			<QuizSlider />
 		</>
 	);
 }

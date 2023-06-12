@@ -188,10 +188,6 @@ body {
 	}
 }
 
-.QuizSlider {
-	background: #4A456A;
-}
-
 .TextBox {
 	min-height: 10vh;
 	height: fit-content;
@@ -346,4 +342,15 @@ body {
 	border-radius: 50%;
 	display: grid;
 	place-content: center;
+}
+
+.carousel-item {
+    text-align: center;
+	margin: 10vw 0;
+}
+
+.QuizSlider {
+	margin: 0 auto;
+	width: 90%;
+	position: relative;
 }
