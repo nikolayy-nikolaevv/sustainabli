@@ -24,6 +24,7 @@ export default function Battery() {
   );
 
   return (
+    <div className = "AnimationContainer">
     <div className="BatteryAnimation Anchor">
       <RiveComponent style={{ height: "50vw" }} />
       <div className = "TextBubble" 
@@ -32,16 +33,22 @@ export default function Battery() {
           setText(texts[counter])}}>
         <p>{text}</p>
       </div>
-      <Bubble bubbleId = "1" bubbleCounter = {counter} content = {counter} onClickInput = {onClickInput} 
-        setCounter = {setCounter} setText = {setText} counter = {counter} texts = {texts} />  
-      <Bubble bubbleId = "2" bubbleCounter = {counter} content = {counter} onClickInput = {onClickInput} 
-        setCounter = {setCounter} setText = {setText} counter = {counter} texts = {texts} />  
-      <Bubble bubbleId = "3" bubbleCounter = {counter} content = {counter} onClickInput = {onClickInput} 
-        setCounter = {setCounter} setText = {setText} counter = {counter} texts = {texts} />  
-      <Bubble bubbleId = "4" bubbleCounter = {counter} content = {counter} onClickInput = {onClickInput} 
-        setCounter = {setCounter} setText = {setText} counter = {counter} texts = {texts} />  
-      <Bubble bubbleId = "5" bubbleCounter = {counter} content = {counter} onClickInput = {onClickInput} 
-        setCounter = {setCounter} setText = {setText} counter = {counter} texts = {texts} />  
+      <Bubble bubbleId = "1" bubbleCounter = {counter} onClickInput = {onClickInput} 
+        setCounter = {setCounter} setText = {setText} counter = {counter} texts = {texts} color = "#F2B34A"
+        size = "15vw" top = "30%" left = "20%" />  
+      <Bubble bubbleId = "2" bubbleCounter = {counter} onClickInput = {onClickInput} 
+        setCounter = {setCounter} setText = {setText} counter = {counter} texts = {texts} color = "#F2B34A"
+        size = "20vh" top = "60%" left = "10%" />  
+      <Bubble bubbleId = "3" bubbleCounter = {counter} onClickInput = {onClickInput} 
+        setCounter = {setCounter} setText = {setText} counter = {counter} texts = {texts} color = "#F2B34A"
+        size = "15vh" top = "20%" left = "90%" />  
+      <Bubble bubbleId = "4" bubbleCounter = {counter} onClickInput = {onClickInput} 
+        setCounter = {setCounter} setText = {setText} counter = {counter} texts = {texts} color = "#F2B34A"
+        size = "15vh" top = "80%" left = "80%" />  
+      <Bubble bubbleId = "5" bubbleCounter = {counter} onClickInput = {onClickInput} 
+        setCounter = {setCounter} setText = {setText} counter = {counter} texts = {texts} color = "#F2B34A"
+        size = "10vh" top = "10vh" left = "10vh" />  
+    </div>
     </div>
   );
 }

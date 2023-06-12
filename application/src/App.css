@@ -10,8 +10,9 @@
 
 body {
 	margin: 0;
-	padding: 0 0 5vw 0;
+	padding: 0;
 	background-color: #4A456A !important;
+	height: 1000vh;
 	width: 100%;
 }
 
@@ -333,15 +334,22 @@ body {
 	border-width: 5vh;
 	padding: 5vh;
 	overflow: hidden;
+	font-family: 'Comfortaa';
+	font-style: normal;
+	font-size: 1.2vw;
+	line-height: 2.5vw;
+	text-align: center;
 }
 
 .Bubble {
-	height: 10vh;
-	width: 10vh;
-	background-color: rgba(194, 118, 249, 0.74);
+	position: absolute;
 	border-radius: 50%;
 	display: grid;
 	place-content: center;
+}
+
+.AnimationContainer {
+	overflow: hidden;
 }
 
 .carousel-item {
@@ -362,14 +370,12 @@ body {
 }
 
 .QuizSlider {
-	color: #ffffff;
 	opacity: 0.8;
-	background-color: rgb(46, 43, 66, 0.75);
+	background-color: #9587E8;
 	height: 70vh;
 	margin: 0 auto;
 	width: 90%;
 	position: relative;
-	border-radius: 5px;
 }
 
 .CarouselNextButton {
@@ -377,6 +383,7 @@ body {
 	margin: 3vw;
 	bottom: 0;
 	right: 0;
+	background-color: #4A456A;
 }
 
 .CarouselPrevButton {
@@ -384,22 +391,5 @@ body {
 	margin: 3vw;
 	bottom: 0;
 	left: 0;
-}
-
-.CarouselControl {
-	color: rgba(255, 255, 255, 0.8);
-	font-size: 1.3vw;
-	background-color: rgba(74, 69, 106, 0.75);
-	border: 1px rgba(255, 255, 255, 0.5) solid;
-	padding: 0.2vw 1.5vw;
-	border-radius: 5px;
-}
-
-.CarouselControl:hover {
-	color: #ffffff;
-	font-size: 1.3vw;
-	background-color: rgba(194, 118, 249, 0.74);
-	border: 1px rgba(255, 255, 255, 0.5) solid;
-	padding: 0.2vw 1.5vw;
-	border-radius: 1px;
+	background-color: #4A456A;
 }
