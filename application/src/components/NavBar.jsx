@@ -1,9 +1,8 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Logo from '../assets/images/logo.svg';
 import { useRef, useEffect} from 'react';
 
-export default function NavBar() {
+export default function NavBar({logo}) {
 	const batteryLevel = useRef();
 
 	useEffect(() => {
@@ -21,7 +20,7 @@ export default function NavBar() {
 		<Navbar className="NavBar" fixed="top">
 			<Navbar.Brand href="#landing" className="NavBarLogo">
 				<img
-					src={Logo}
+					src={logo}
 					className="NavBarLogoPic d-inline-block align-top"
 					alt="Li Logo"
 				/>
