@@ -3,7 +3,7 @@ import AtomTop from "../assets/images/atom_top.png";
 import AtomMiddle from "../assets/images/atom_middle.png";
 import AtomBottom from "../assets/images/atom_bottom.png";
 
-export default function LandingComponent({incrementLogo, logo}) {
+export default function LandingComponent({incrementLogo, decrementLogo, logo}) {
     return (
         <>
             <div id="landing" className="LandingComponent Anchor">
@@ -16,7 +16,7 @@ export default function LandingComponent({incrementLogo, logo}) {
                 <div className="AtomBottom AtomSpinner">
                     <img src={AtomBottom} className="AtomImage" alt="Spinning Atom" />
                 </div>
-                <LandingHeader incrementLogo={incrementLogo} logo={logo}/>
+                <LandingHeader incrementLogo={incrementLogo} logo={logo} decrementLogo={decrementLogo}/>
             </div>
 
         </>

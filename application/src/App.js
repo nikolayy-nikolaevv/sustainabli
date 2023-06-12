@@ -23,16 +23,22 @@ const images = [Logo, Logo_Blue, Logo_Green, Logo_Lila, Logo_Magenta, Logo_Red, 
 
 function App() {
 	const [currentLogo, setCurrentLogo] = useState(0);
-    const incrementLogo = () => {
-        if (currentLogo < images.length-1)
-            setCurrentLogo(currentLogo + 1);
-        else setCurrentLogo(0);
-    }
+	const incrementLogo = () => {
+		if (currentLogo < images.length - 1)
+			setCurrentLogo(currentLogo + 1);
+		else setCurrentLogo(0);
+	}
+	const decrementLogo = (e) => {
+		e.preventDefault();
+		if (currentLogo > 0)
+			setCurrentLogo(currentLogo - 1);
+		else setCurrentLogo(images.length - 1);
+	}
 
 	return (
 		<>
-			<NavBar logo={images[currentLogo]}/>
-			<LandingComponent logo={images[currentLogo]} incrementLogo={incrementLogo}/>
+			<NavBar logo={images[currentLogo]} />
+			<LandingComponent logo={images[currentLogo]} incrementLogo={incrementLogo} decrementLogo={decrementLogo} />
 			<SecondComponent />
 			{/* <QuizSlider /> */}
 			<SuperheroComponent />
