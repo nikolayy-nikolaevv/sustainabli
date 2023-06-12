@@ -340,12 +340,10 @@ body {
 }
 
 .Bubble {
-	position: absolute;
 	height: 10vh;
 	width: 10vh;
 	background-color: rgba(194, 118, 249, 0.74);
 	border-radius: 50%;
 	display: grid;
 	place-content: center;
-	visibility: hidden;
 }
