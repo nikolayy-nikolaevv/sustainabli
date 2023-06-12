@@ -34,7 +34,7 @@ const CustomTooltip = ({ active, payload, label }) => {
 };
 
 const CustomLabel = ({ active, payload, label }) => {
-	return payload.payload.value + "%";
+	return payload.payload.name + ": " + payload.payload.value + "%";
 };
 
 export default function LithiumUsageComponent() {

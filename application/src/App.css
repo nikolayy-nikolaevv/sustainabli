@@ -346,11 +346,21 @@ body {
 }
 
 .carousel-item {
-    text-align: center;
+	text-align: center;
 	margin: 10vw 0;
 }
 
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-indicators {
+	display: none !important;
+	pointer-events: none !important;
+}
+
 .QuizSlider {
+	opacity: 0.8;
+	background-color: #9587E8;
+	height: 70vh;
 	margin: 0 auto;
 	width: 90%;
 	position: relative;
