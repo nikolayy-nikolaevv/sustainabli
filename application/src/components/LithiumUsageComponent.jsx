@@ -11,7 +11,7 @@ const data = [
 	{ name: 'Non-Rechargable Batteries', value: 1.5 },
 	{ name: 'Others', value: 10.6 },
 ];
-const COLORS = ["#fd7f6f", "#7eb0d5", "#b2e061", "#bd7ebe", "#ffb55a", "#ffee65", "#83a8ff", "#fdcce5", "#8bd3c7"];
+const COLORS = ["#9487e8", "#c080dd", "#e27acb", "#fa77b4", "#ff799b", "#ff8282", "#ff916a", "#ffa157", "#f2b34a"];
 // const COLORS = ['#f2b34a', '#f6c275', '#f7d19e', '#f6e1c7', '#f1f1f1', '#f0e9de', '#efe2cd', '#eedabb', '#ecd3a9'];
 
 
@@ -40,7 +40,7 @@ const CustomLabel = ({ active, payload, label }) => {
 export default function LithiumUsageComponent() {
 	return (
 		<div id="uses-of-lithium" className='ChartContainer Anchor'>
-			<div className="ChartTitle">
+			<div className="ChartTitle" >
 				<p>What exactly is Lithium used for?</p>
 			</div>
 			<ResponsiveContainer height="70%" className="Chart">
