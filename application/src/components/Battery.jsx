@@ -40,6 +40,7 @@ export default function Battery() {
   );
 
   return (
+      <div id="what-you-can-do">
     <div className = "AnimationContainer">
     <div className="BatteryAnimation Anchor">
       <RiveComponent style={{ height: "50vw" }} />
@@ -63,5 +64,6 @@ export default function Battery() {
         size = "10vh" top = "10vh" left = "10vh" />  
     </div>
     </div>
+      </div>
   );
 }
