@@ -1,14 +1,14 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { useRef, useEffect} from 'react';
+import { useRef, useEffect } from 'react';
 
-export default function NavBar({logo}) {
+export default function NavBar({ logo }) {
 	const batteryLevel = useRef();
 
 	useEffect(() => {
 		window.addEventListener("scroll", function (event) {
 			const scrollPos = window.scrollY;
-			const batteryProgress = 10 + scrollPos / 70;
+			const batteryProgress = 15 + scrollPos / (document.body.scrollHeight / 100);
 			batteryLevel.current.style.width = batteryProgress + "%";
 			const colorStart = "rgb(" + (237 - batteryProgress * 1.5) + "," + (118 + batteryProgress * 0.4) + ",80)";
 			const colorEnd = "rgb(" + (242 - batteryProgress * 1.5) + "," + (179 + batteryProgress * 0.4) + ",74)";
