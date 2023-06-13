@@ -47,6 +47,7 @@ body {
 	line-height: 13vw;
 	text-align: center;
 	letter-spacing: 0.05em;
+	user-select: none;
 }
 
 .LandingHeaderTitleText[itemprop="InnerShadowText"] {
@@ -409,5 +410,4 @@ body {
 	background-color: rgba(194, 118, 249, 0.74);
 	border: 1px rgba(255, 255, 255, 0.5) solid;
 	padding: 0.2vw 1.5vw;
-	border-radius: 1px;
 }
