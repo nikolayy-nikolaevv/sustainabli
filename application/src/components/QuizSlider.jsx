@@ -13,15 +13,15 @@ export default function QuizSlider() {
 	const decrementSlide = (selectedIndex, e) => {
 		setIndex(index - 1);
 	};
-
+	var sum = 0;
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		const formFields = document.querySelectorAll('.form-check-input:checked');
 		const formData = new FormData();
 		formFields.forEach(field => {
-			console.log(field.checked);
+			sum += field.checked ? Number(field.value) : 0;
 		});
-
+		console.log(sum);
 		fetch("http://localhost:8000/survey", {
 			method: "POST",
 			data: formFields,
