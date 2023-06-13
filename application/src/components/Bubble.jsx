@@ -1,9 +1,10 @@
 export default function Bubble({bubbleId, icon, bubbleCounter, onClickInput, setText, setCounter, counter, texts,
   color, size, top, left}) {
     const myId = "Bubble" + {bubbleCounter};
+	console.log(typeof bubbleCounter + typeof bubbleId)
   return(
     <>
-      {bubbleId === bubbleCounter ? (
+      {Number(bubbleId) === Number(bubbleCounter) ? (
         <div className = "Bubble" id = {myId} style = {{pointerEvents: 'auto', backgroundColor: `${color}`, height: `${size}`, 
           width: `${size}`, top: `${top}`, left: `${left}`}} 
           onClick={() => {onClickInput.fire();

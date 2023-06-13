@@ -43,10 +43,7 @@ export default function Battery() {
     <div className = "AnimationContainer">
     <div className="BatteryAnimation Anchor">
       <RiveComponent style={{ height: "50vw" }} />
-      <div className = "TextBubble" 
-        onClick={() => {
-          setCounter(counter + 1);
-          setText(texts[counter])}}>
+      <div className = "TextBubble">
         <p>{text}</p>
       </div>
       <Bubble bubbleId = "1" icon = {thermometer} bubbleCounter = {counter} onClickInput = {onClickInput} 
