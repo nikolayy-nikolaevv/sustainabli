@@ -11,8 +11,9 @@ const data = [
 	{ name: 'Non-Rechargable Batteries', value: 1.5 },
 	{ name: 'Others', value: 10.6 },
 ];
-const COLORS = ["#9487e8", "#c080dd", "#e27acb", "#fa77b4", "#ff799b", "#ff8282", "#ff916a", "#ffa157", "#f2b34a"];
-// const COLORS = ['#f2b34a', '#f6c275', '#f7d19e', '#f6e1c7', '#f1f1f1', '#f0e9de', '#efe2cd', '#eedabb', '#ecd3a9'];
+const COLORS = ["#f84a2f", "#b161de", "#cd93ee", "#bcb3f5", "#eee6e6", "#ecd3a9", "#f2b34a", "#f88d6b", "#f96738"];
+// const COLORS = ["#d858c9", "#f455b1", "#ff5a98", "#ff6781", "#ff786b", "#ff8c5a", "#ffa04e", "#f2b34a", "#f2b28a"];
+// const COLORS = ["#b161de", "#d858c9", "#f455b1", "#ff5a98", "#ff6781", "#ff786b", "#ff8c5a", "#ffa04e", "#f2b34a"];
 
 
 const CustomTooltip = ({ active, payload, label }) => {
