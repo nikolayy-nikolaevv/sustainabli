@@ -1,7 +1,6 @@
 export default function Bubble({bubbleId, icon, bubbleCounter, onClickInput, setText, setCounter, counter, texts,
   color, size, top, left}) {
     const myId = "Bubble" + {bubbleCounter};
-	console.log(typeof bubbleCounter + typeof bubbleId)
   return(
     <>
       {Number(bubbleId) === Number(bubbleCounter) ? (
