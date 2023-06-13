@@ -61,7 +61,7 @@ export default function Battery() {
         size = "15vh" top = "80%" left = "80%" />  
       <Bubble bubbleId = "5" icon = {oldBattery} bubbleCounter = {counter} onClickInput = {onClickInput} 
         setCounter = {setCounter} setText = {setText} counter = {counter} texts = {texts} color = "#2E2B42"
-        size = "10vh" top = "10vh" left = "10vh" />  
+        size = "18vh" top = "10vh" left = "10vh" />
     </div>
     </div>
       </div>
