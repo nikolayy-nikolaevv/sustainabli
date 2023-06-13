@@ -411,3 +411,8 @@ body {
 	border: 1px rgba(255, 255, 255, 0.5) solid;
 	padding: 0.2vw 1.5vw;
 }
+
+.form-check-label{
+	text-align: left !important;
+	display: flex;
+}
