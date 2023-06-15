@@ -83,123 +83,150 @@ export default function QuizSlider() {
 								label={'Electric Vehicles'}
 							/>
 						</div>
-
-						<h3>How long does the lithium battery typically last in the products you have purchased?
-						</h3>
-
-
-						<div key={`default-radio`} className="mb-3">
+						<h3>Have you ever altered your purchasing decisions based on a company's environmental policies and commitment to sustainable practices?</h3>
+						<div key={'inline-radio'} className="my-5">
 							<Form.Check
 								value={-10}
-								defaultChecked
+								className={"mx-4"}
+								inline
 								type={"radio"}
-								id={`q-2-a-1`}
-								name={"question2"}
-								label={`less than 1 year`}
+								id={`q-6-a-1`}
+								name={"question6"}
+								label={`Yes, frequently`}
 							/>
 							<Form.Check
 								value={-5}
+								className={"mx-4"}
+								inline
 								type={"radio"}
-								id={`q-2-a-2`}
-								name={"question2"}
-								label={`1-2 years`}
+								id={`q-6-a-2`}
+								name={"question6"}
+								label={`Occasionally`}
 							/>
 							<Form.Check
 								value={0}
-								type={"radio"}
-								id={`q-2-a-3`}
-								name={"question2"}
-								label={`2-3 years`}
-							/>
-							<Form.Check
-								value={5}
-								type={"radio"}
-								id={`q-2-a-4`}
-								name={"question2"}
-								label={`more than 3 years`}
-							/>
-						</div>
-
-						<Controls incrementSlide={incrementSlide} decrementSlide={decrementSlide} index={index} slideCount={slideCount} />
-					</Carousel.Item>
-					<Carousel.Item>
-						<h3>Have you ever experienced safety issues with the use of lithium batteries in the products you have purchased?</h3>
-						<div key={'default-radio'} className="mb-3">
-							<Form.Check
-								type={"radio"}
-								id={`q-3-a-1`}
-								name={"question3"}
-								label={`Yes`}
-								value={0}
-							/>
-							<Form.Check
 								defaultChecked
+								className={"mx-4"}
+								inline
 								type={"radio"}
-								id={`q-3-a-2`}
-								name={"question3"}
-								label={`No`}
+								id={`q-6-a-3`}
+								name={"question6"}
+								label={`Rarely`}
+							/>
+							<Form.Check
 								value={5}
-							/>
-						</div>
-						<h3>If you answered yes to the previous question, what safety issues have you encountered?</h3>
-						<p>(Select all that apply)</p>
-						<div key={`default-checkbox`} className="mb-3">
-							<Form.Check
-								value={-5}
-								type={"checkbox"}
-								id={`q-4-a-1`}
-								name={"question4"}
-								label={'Overheating'}
-							/>
-							<Form.Check
-								value={-5}
-								type={"checkbox"}
-								id={`q-4-a-2`}
-								name={"question4"}
-								label={'Deformation'}
-							/>
-							<Form.Check
-								value={-5}
-								type={"checkbox"}
-								id={`q-4-a-3`}
-								name={"question4"}
-								label={'Fire'}
-							/>
-							<Form.Check
-								value={-5}
-								type={"checkbox"}
-								id={`q-4-a-4`}
-								name={"question4"}
-								label={'Explosion'}
+								className={"mx-4"}
+								inline
+								type={"radio"}
+								id={`q-6-a-4`}
+								name={"question6"}
+								label={`No, it doesn't influence my purchasing decisions`}
 							/>
 						</div>
 						<Controls incrementSlide={incrementSlide} decrementSlide={decrementSlide} index={index} slideCount={slideCount} />
 					</Carousel.Item>
 					<Carousel.Item>
-						<h3>How do you dispose of used or defective lithium batteries from the products you have purchased?</h3>
-						<div key={`default-checkbox`} className="mb-3">
+						<h3>How important is it for you to have clear information about the environmental impact of lithium usage provided by manufacturers when purchasing electronic devices?</h3>
+						<div key={'inline-radio'} className="my-5">
+							<Form.Check
+								value={-10}
+								className={"mx-4"}
+								inline
+								type={"radio"}
+								id={`q-6-a-1`}
+								name={"question6"}
+								label={`Not important at all`}
+							/>
+							<Form.Check
+								value={-5}
+								className={"mx-4"}
+								inline
+								type={"radio"}
+								id={`q-6-a-2`}
+								name={"question6"}
+								label={`Not very important`}
+							/>
+							<Form.Check
+								value={0}
+								defaultChecked
+								className={"mx-4"}
+								inline
+								type={"radio"}
+								id={`q-6-a-3`}
+								name={"question6"}
+								label={`I don't care`}
+							/>
+							<Form.Check
+								value={5}
+								className={"mx-4"}
+								inline
+								type={"radio"}
+								id={`q-6-a-4`}
+								name={"question6"}
+								label={`Somewhat important`}
+							/>
 							<Form.Check
 								value={10}
-								type={"checkbox"}
-								id={`q-5-a-1`}
-								name={"question5"}
-								label={'Recycling center'}
+								className={"mx-4"}
+								inline
+								type={"radio"}
+								id={`q-6-a-5`}
+								name={"question6"}
+								label={`Very important`}
 							/>
+						</div>
+						<h3>In your opinion, how important is it for companies to prioritize environmentally friendly practices when manufacturing products that contain lithium?</h3>
+						<div key={'inline-radio'} className="my-5">
 							<Form.Check
-								value={0}
-								type={"checkbox"}
-								id={`q-5-a-2`}
-								name={"question5"}
-								label={'Regular trash'}
+								value={-10}
+								className={"mx-4"}
+								inline
+								type={"radio"}
+								id={`q-6-a-1`}
+								name={"question6"}
+								label={`Extremely important`}
 							/>
 							<Form.Check
 								value={-5}
-								type={"checkbox"}
-								id={`q-5-a-3`}
-								name={"question5"}
-								label={'Ma`am i eat my own batteries '}
+								className={"mx-4"}
+								inline
+								type={"radio"}
+								id={`q-6-a-2`}
+								name={"question6"}
+								label={`Very important`}
+							/>
+							<Form.Check
+								value={0}
+								defaultChecked
+								className={"mx-4"}
+								inline
+								type={"radio"}
+								id={`q-6-a-3`}
+								name={"question6"}
+								label={`Moderately important`}
+							/>
+							<Form.Check
+								value={5}
+								className={"mx-4"}
+								inline
+								type={"radio"}
+								id={`q-6-a-4`}
+								name={"question6"}
+								label={`Slightly important`}
+							/>
+							<Form.Check
+								value={5}
+								className={"mx-4"}
+								inline
+								type={"radio"}
+								id={`q-6-a-4`}
+								name={"question6"}
+								label={`Not important at all`}
 							/>
 						</div>
+						<Controls incrementSlide={incrementSlide} decrementSlide={decrementSlide} index={index} slideCount={slideCount} />
+					</Carousel.Item>
+					<Carousel.Item>
 						<h3>How important is the battery life of a technology product to you when making a purchase?</h3>
 						<div key={'inline-radio'} className="my-5">
 							<Form.Check
@@ -249,28 +276,85 @@ export default function QuizSlider() {
 								label={`Very important`}
 							/>
 						</div>
+						<h3>How long does the lithium battery typically last in the products you have purchased?
+						</h3>
+						<div key={`default-radio`} className="mb-3">
+							<Form.Check
+								value={-10}
+								defaultChecked
+								type={"radio"}
+								id={`q-2-a-1`}
+								name={"question2"}
+								label={`less than 1 year`}
+							/>
+							<Form.Check
+								value={-5}
+								type={"radio"}
+								id={`q-2-a-2`}
+								name={"question2"}
+								label={`1-2 years`}
+							/>
+							<Form.Check
+								value={0}
+								type={"radio"}
+								id={`q-2-a-3`}
+								name={"question2"}
+								label={`2-3 years`}
+							/>
+							<Form.Check
+								value={5}
+								type={"radio"}
+								id={`q-2-a-4`}
+								name={"question2"}
+								label={`more than 3 years`}
+							/>
+						</div>
+						<h3>How do you dispose of used or defective lithium batteries from the products you have purchased?</h3>
+						<div key={`default-checkbox`} className="mb-3">
+							<Form.Check
+								value={10}
+								type={"checkbox"}
+								id={`q-5-a-1`}
+								name={"question5"}
+								label={'Recycling center'}
+							/>
+							<Form.Check
+								value={0}
+								type={"checkbox"}
+								id={`q-5-a-2`}
+								name={"question5"}
+								label={'Regular trash'}
+							/>
+							<Form.Check
+								value={-5}
+								type={"checkbox"}
+								id={`q-5-a-3`}
+								name={"question5"}
+								label={'Ma`am i eat my own batteries '}
+							/>
+						</div>
 						<Controls incrementSlide={incrementSlide} decrementSlide={decrementSlide} index={index} slideCount={slideCount} />
 					</Carousel.Item>
 					<Carousel.Item>
-						<h3>How important is the safety of the battery in a technology product to you when making a purchase?</h3>
+						<h3>Have you ever considered the environmental impact of lithium extraction and disposal when using these devices?</h3>
 						<div key={'inline-radio'} className="my-5">
 							<Form.Check
 								value={-10}
 								className={"mx-4"}
 								inline
 								type={"radio"}
-								id={`q-7-a-1`}
-								name={"question7"}
-								label={`Not important at all`}
+								id={`q-6-a-1`}
+								name={"question6"}
+								label={`Yes, frequently`}
 							/>
 							<Form.Check
 								value={-5}
 								className={"mx-4"}
 								inline
 								type={"radio"}
-								id={`q-7-a-2`}
-								name={"question7"}
-								label={`Not very important`}
+								id={`q-6-a-2`}
+								name={"question6"}
+								label={`Occasionally`}
 							/>
 							<Form.Check
 								value={0}
@@ -278,27 +362,116 @@ export default function QuizSlider() {
 								className={"mx-4"}
 								inline
 								type={"radio"}
-								id={`q-7-a-3`}
-								name={"question7"}
-								label={`I don't care`}
+								id={`q-6-a-3`}
+								name={"question6"}
+								label={`Rarely`}
 							/>
 							<Form.Check
 								value={5}
 								className={"mx-4"}
 								inline
 								type={"radio"}
-								id={`q-7-a-4`}
-								name={"question7"}
-								label={`Somewhat important`}
+								id={`q-6-a-4`}
+								name={"question6"}
+								label={`No, haven't considered it`}
 							/>
+						</div>
+						<h3>How willing are you to pay a premium for products that are environmentally friendly and have a reduced environmental impact?</h3>
+						<div key={'inline-radio'} className="my-5">
 							<Form.Check
-								value={10}
+								value={-10}
 								className={"mx-4"}
 								inline
 								type={"radio"}
-								id={`q-7-a-5`}
-								name={"question7"}
-								label={`Very important`}
+								id={`q-6-a-1`}
+								name={"question6"}
+								label={`Very willing`}
+							/>
+							<Form.Check
+								value={-5}
+								className={"mx-4"}
+								inline
+								type={"radio"}
+								id={`q-6-a-2`}
+								name={"question6"}
+								label={`Somewhat willing`}
+							/>
+							<Form.Check
+								value={0}
+								defaultChecked
+								className={"mx-4"}
+								inline
+								type={"radio"}
+								id={`q-6-a-3`}
+								name={"question6"}
+								label={`I dont't care`}
+							/>
+							<Form.Check
+								value={5}
+								className={"mx-4"}
+								inline
+								type={"radio"}
+								id={`q-6-a-4`}
+								name={"question6"}
+								label={`Somewhat unwilling`}
+							/>
+							<Form.Check
+								value={5}
+								className={"mx-4"}
+								inline
+								type={"radio"}
+								id={`q-6-a-4`}
+								name={"question6"}
+								label={`Very unwilling`}
+							/>
+						</div>
+
+						<Controls incrementSlide={incrementSlide} decrementSlide={decrementSlide} index={index} slideCount={slideCount} />
+					</Carousel.Item>
+					<Carousel.Item>
+						<h3>What actions do you take to be more nature-friendly when using products that contain lithium? (Select all that apply)</h3>
+						<div key={`default-checkbox`} className="mb-3">
+							<Form.Check
+								value={-5}
+								type={"checkbox"}
+								name={'question1'}
+								id={`q-1-a-1`}
+								label={'Recycling electronic devices properly'}
+							/>
+							<Form.Check
+								value={-5}
+								type={"checkbox"}
+								name={'question1'}
+								id={`q-1-a-2`}
+								label={'Using energy-efficient settings on devices'}
+							/>
+							<Form.Check
+								value={-5}
+								type={"checkbox"}
+								name={'question1'}
+								id={`q-1-a-3`}
+								label={'Extending the lifespan of devices before upgrading'}
+							/>
+							<Form.Check
+								value={-5}
+								type={"checkbox"}
+								name={'question1'}
+								id={`q-1-a-4`}
+								label={'Participating in lithium battery recycling programs'}
+							/>
+							<Form.Check
+								value={-5}
+								type={"checkbox"}
+								name={'question1'}
+								id={`q-1-a-5`}
+								label={'Purchasing devices from environmentally conscious brands'}
+							/>
+							<Form.Check
+								value={-5}
+								type={"checkbox"}
+								name={'question1'}
+								id={`q-1-a-5`}
+								label={'Educating others about the environmental impact of lithium extraction and disposal'}
 							/>
 						</div>
 						<h3>How do you see the use of lithium batteries in technology evolving in the future?</h3>
