@@ -355,6 +355,25 @@ body {
 	user-select: none;
 }
 
+.BubbleActive {
+	background: radial-gradient(50% 50% at 50% 50%, #B242E3 0%, #A553CC 33.33%, #6153BD 100%);
+	animation: bubble 3s linear infinite;
+}
+
+@keyframes bubble {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(10deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
 .AnimationContainer {
 	overflow: hidden;
 }
@@ -418,7 +437,7 @@ body {
 	padding: 0.2vw 1.5vw;
 }
 
-.form-check-label{
+.form-check-label {
 	text-align: left !important;
 	display: flex;
 }
