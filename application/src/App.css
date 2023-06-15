@@ -452,6 +452,7 @@ body {
 	bottom: 30%;
 	left: 15.2vw;
 	pointer-events: none;
+	user-select: none;
 }
 
 .AmoguPic {

@@ -1,9 +1,18 @@
-var express = require('express');
-var router = express.Router();
+'use strict';
+const express = require('express');
 require('dotenv').config()
-const asyncMysql = require('mysql2/promise');
+const serverless = require('serverless-http');
+const app = express();
+const bodyParser = require('body-parser');
+const asyncMysql = require('mysql2/promise')
+const cors = require('cors');
 
-/* GET home page. */
+app.use(cors({
+  origin: '*'
+}));
+
+const router = express.Router();
+
 router.get('/survey', async function (req, res, next) {
   const asyncDb_client = await asyncMysql.createConnection(process.env.DATABASE_URL);
   var sql = `SELECT AVG(result) as average FROM survey_results`;
@@ -29,5 +38,8 @@ router.post('/survey', async function (req, res, next) {
   res.send({ "status": "success", "average": Number(selectedRows[0].average.toFixed(2)) });
 });
 
+app.use(bodyParser.json());
+app.use('/.netlify/functions/server', router);
 
-module.exports = router;
+module.exports = app;
+module.exports.handler = serverless(app);

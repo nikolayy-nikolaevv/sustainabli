@@ -13,26 +13,23 @@ export default function QuizSlider() {
 	const decrementSlide = (selectedIndex, e) => {
 		setIndex(index - 1);
 	};
-	var sum = 0;
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		const formFields = document.querySelectorAll('.form-check-input:checked');
+		var sum = 0;
 
 		formFields.forEach(field => {
 			sum += field.checked ? Number(field.value) : 0;
 		});
 
-		console.log(sum);
-
 		fetch("http://localhost:8000/survey", {
 			method: "POST",
-			data: formFields,
+			body: JSON.stringify({"result": sum}),
 			headers: {
 				"Accept": "application/json",
 				"Content-Type": "application/json",
 			}
-
 		});
 	}
 
@@ -517,7 +514,7 @@ export default function QuizSlider() {
 	);
 }
 
-function Controls({ incrementSlide, decrementSlide, index, slideCount, handleSubmit }) {
+function Controls({ incrementSlide, decrementSlide, index, slideCount }) {
 	if (index === 0) {
 		return (
 			<>
