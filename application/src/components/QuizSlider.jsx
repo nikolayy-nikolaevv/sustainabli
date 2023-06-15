@@ -14,14 +14,17 @@ export default function QuizSlider() {
 		setIndex(index - 1);
 	};
 	var sum = 0;
+
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		const formFields = document.querySelectorAll('.form-check-input:checked');
-		const formData = new FormData();
+
 		formFields.forEach(field => {
 			sum += field.checked ? Number(field.value) : 0;
 		});
+
 		console.log(sum);
+
 		fetch("http://localhost:8000/survey", {
 			method: "POST",
 			data: formFields,
@@ -49,35 +52,35 @@ export default function QuizSlider() {
 							<p>(Select all that apply)</p>
 							<div key={`default-checkbox`}>
 								<Form.Check
-									value={-5}
+									value={0}
 									type={"checkbox"}
 									name={'question1'}
 									id={`q-1-a-1`}
 									label={'Smartphones'}
 								/>
 								<Form.Check
-									value={-5}
+									value={0}
 									type={"checkbox"}
 									name={'question1'}
 									id={`q-1-a-2`}
 									label={'Laptops'}
 								/>
 								<Form.Check
-									value={-5}
+									value={0}
 									type={"checkbox"}
 									name={'question1'}
 									id={`q-1-a-3`}
 									label={'Tablets'}
 								/>
 								<Form.Check
-									value={-5}
+									value={0}
 									type={"checkbox"}
 									name={'question1'}
 									id={`q-1-a-4`}
 									label={'Wearables'}
 								/>
 								<Form.Check
-									value={-5}
+									value={0}
 									type={"checkbox"}
 									name={'question1'}
 									id={`q-1-a-5`}
@@ -89,40 +92,40 @@ export default function QuizSlider() {
 							<h3>Have you ever altered your purchasing decisions based on a company's environmental policies and commitment to sustainable practices?</h3>
 							<div key={'inline-radio'} className="my-4 radio-inline">
 								<Form.Check
-									value={10}
+									value={0}
 									inline
 									className={"mx-5"}
 									type={"radio"}
 									id={`q-2-a-1`}
 									name={"question2"}
-									label={`Yes, frequently`}
+									label={`No, never`}
+								/>
+								<Form.Check
+									value={2.5}
+									inline
+									className={"mx-5"}
+									type={"radio"}
+									id={`q-2-a-2`}
+									name={"question2"}
+									label={`Rarely`}
 								/>
 								<Form.Check
 									value={5}
 									inline
 									className={"mx-5"}
 									type={"radio"}
-									id={`q-2-a-2`}
+									id={`q-2-a-3`}
 									name={"question2"}
 									label={`Occasionally`}
 								/>
 								<Form.Check
-									value={0}
-									inline
-									className={"mx-5"}
-									type={"radio"}
-									id={`q-2-a-3`}
-									name={"question2"}
-									label={`Rarely`}
-								/>
-								<Form.Check
-									value={-5}
+									value={7.5}
 									inline
 									className={"mx-5"}
 									type={"radio"}
 									id={`q-2-a-4`}
 									name={"question2"}
-									label={`No, it doesn't influence my purchasing decisions`}
+									label={`Yes, frequently`}
 								/>
 							</div>
 						</div>
@@ -133,7 +136,7 @@ export default function QuizSlider() {
 							<h3>How important is it for you to have clear information about the environmental impact of lithium usage provided by manufacturers when purchasing electronic devices?</h3>
 							<div key={'inline-radio'} className="my-4 radio-inline">
 								<Form.Check
-									value={-10}
+									value={0}
 									className={"mx-5"}
 									inline
 									type={"radio"}
@@ -142,7 +145,7 @@ export default function QuizSlider() {
 									label={`Not important at all`}
 								/>
 								<Form.Check
-									value={-5}
+									value={2.5}
 									className={"mx-5"}
 									inline
 									type={"radio"}
@@ -151,7 +154,7 @@ export default function QuizSlider() {
 									label={`Not very important`}
 								/>
 								<Form.Check
-									value={0}
+									value={5}
 									className={"mx-5"}
 									inline
 									type={"radio"}
@@ -160,7 +163,7 @@ export default function QuizSlider() {
 									label={`I don't care`}
 								/>
 								<Form.Check
-									value={5}
+									value={7.5}
 									className={"mx-5"}
 									inline
 									type={"radio"}
@@ -183,7 +186,7 @@ export default function QuizSlider() {
 							<h3>In your opinion, how important is it for companies to prioritize environmentally friendly practices when manufacturing products that contain lithium?</h3>
 							<div key={'inline-radio'} className="my-4 radio-inline">
 								<Form.Check
-									value={-10}
+									value={0}
 									className={"mx-5"}
 									inline
 									type={"radio"}
@@ -192,7 +195,7 @@ export default function QuizSlider() {
 									label={`Not important at all`}
 								/>
 								<Form.Check
-									value={-5}
+									value={2.5}
 									className={"mx-5"}
 									inline
 									type={"radio"}
@@ -201,7 +204,7 @@ export default function QuizSlider() {
 									label={`Not very important`}
 								/>
 								<Form.Check
-									value={0}
+									value={5}
 									className={"mx-5"}
 									inline
 									type={"radio"}
@@ -210,7 +213,7 @@ export default function QuizSlider() {
 									label={`I don't care`}
 								/>
 								<Form.Check
-									value={5}
+									value={7.5}
 									className={"mx-5"}
 									inline
 									type={"radio"}
@@ -233,7 +236,7 @@ export default function QuizSlider() {
 							<h3>How important is the battery life of a technology product to you when making a purchase?</h3>
 							<div key={'inline-radio'} className="my-4 radio-inline">
 								<Form.Check
-									value={-10}
+									value={0}
 									className={"mx-5"}
 									inline
 									type={"radio"}
@@ -242,7 +245,7 @@ export default function QuizSlider() {
 									label={`Not important at all`}
 								/>
 								<Form.Check
-									value={-5}
+									value={2.5}
 									className={"mx-5"}
 									inline
 									type={"radio"}
@@ -251,7 +254,7 @@ export default function QuizSlider() {
 									label={`Not very important`}
 								/>
 								<Form.Check
-									value={0}
+									value={5}
 									className={"mx-5"}
 									inline
 									type={"radio"}
@@ -260,7 +263,7 @@ export default function QuizSlider() {
 									label={`I don't care`}
 								/>
 								<Form.Check
-									value={5}
+									value={7.5}
 									className={"mx-5"}
 									inline
 									type={"radio"}
@@ -287,28 +290,28 @@ export default function QuizSlider() {
 							</h3>
 							<div key={`default-radio`} className="mb-3">
 								<Form.Check
-									value={-10}
+									value={0}
 									type={"radio"}
 									id={`q-6-a-1`}
 									name={"question6"}
 									label={`less than 1 year`}
 								/>
 								<Form.Check
-									value={-5}
+									value={2.5}
 									type={"radio"}
 									id={`q-6-a-2`}
 									name={"question6"}
 									label={`1-2 years`}
 								/>
 								<Form.Check
-									value={0}
+									value={5}
 									type={"radio"}
 									id={`q-6-a-3`}
 									name={"question6"}
 									label={`2-3 years`}
 								/>
 								<Form.Check
-									value={5}
+									value={7.5}
 									type={"radio"}
 									id={`q-6-a-4`}
 									name={"question6"}
@@ -320,14 +323,14 @@ export default function QuizSlider() {
 							<h3>How do you dispose of used or defective lithium batteries from the products you have purchased?</h3>
 							<div key={`default-checkbox`} className="mb-3">
 								<Form.Check
-									value={10}
+									value={7.5}
 									type={"checkbox"}
 									id={`q-7-a-1`}
 									name={"question7"}
 									label={'Recycling center'}
 								/>
 								<Form.Check
-									value={0}
+									value={2.5}
 									type={"checkbox"}
 									id={`q-7-a-2`}
 									name={"question7"}
@@ -349,29 +352,20 @@ export default function QuizSlider() {
 							<h3>Have you ever considered the environmental impact of lithium extraction and disposal when using these devices?</h3>
 							<div key={'inline-radio'} className="my-4 radio-inline">
 								<Form.Check
-									value={-10}
+									value={0}
 									className={"mx-5"}
 									inline
 									type={"radio"}
 									id={`q-8-a-1`}
 									name={"question8"}
-									label={`Yes, frequently`}
+									label={`No, haven't considered it`}
 								/>
 								<Form.Check
-									value={-5}
+									value={2.5}
 									className={"mx-5"}
 									inline
 									type={"radio"}
 									id={`q-8-a-2`}
-									name={"question8"}
-									label={`Occasionally`}
-								/>
-								<Form.Check
-									value={0}
-									className={"mx-5"}
-									inline
-									type={"radio"}
-									id={`q-8-a-3`}
 									name={"question8"}
 									label={`Rarely`}
 								/>
@@ -380,9 +374,18 @@ export default function QuizSlider() {
 									className={"mx-5"}
 									inline
 									type={"radio"}
+									id={`q-8-a-3`}
+									name={"question8"}
+									label={`Occasionally`}
+								/>
+								<Form.Check
+									value={7.5}
+									className={"mx-5"}
+									inline
+									type={"radio"}
 									id={`q-8-a-4`}
 									name={"question8"}
-									label={`No, haven't considered it`}
+									label={`Yes, frequently`}
 								/>
 							</div>
 						</div>
@@ -390,38 +393,20 @@ export default function QuizSlider() {
 							<h3>How willing are you to pay a premium for products that are environmentally friendly and have a reduced environmental impact?</h3>
 							<div key={'inline-radio'} className="my-4 radio-inline">
 								<Form.Check
-									value={-10}
+									value={0}
 									className={"mx-5"}
 									inline
 									type={"radio"}
 									id={`q-9-a-1`}
 									name={"question9"}
-									label={`Very willing`}
+									label={`Very unwilling`}
 								/>
 								<Form.Check
-									value={-5}
+									value={2.5}
 									className={"mx-5"}
 									inline
 									type={"radio"}
 									id={`q-9-a-2`}
-									name={"question9"}
-									label={`Somewhat willing`}
-								/>
-								<Form.Check
-									value={0}
-									className={"mx-5"}
-									inline
-									type={"radio"}
-									id={`q-9-a-3`}
-									name={"question9"}
-									label={`I don't care`}
-								/>
-								<Form.Check
-									value={5}
-									className={"mx-5"}
-									inline
-									type={"radio"}
-									id={`q-9-a-4`}
 									name={"question9"}
 									label={`Somewhat unwilling`}
 								/>
@@ -430,9 +415,27 @@ export default function QuizSlider() {
 									className={"mx-5"}
 									inline
 									type={"radio"}
+									id={`q-9-a-3`}
+									name={"question9"}
+									label={`I don't care`}
+								/>
+								<Form.Check
+									value={7.5}
+									className={"mx-5"}
+									inline
+									type={"radio"}
+									id={`q-9-a-4`}
+									name={"question9"}
+									label={`Somewhat willing`}
+								/>
+								<Form.Check
+									value={10}
+									className={"mx-5"}
+									inline
+									type={"radio"}
 									id={`q-9-a-5`}
 									name={"question9"}
-									label={`Very unwilling`}
+									label={`Very willing`}
 								/>
 							</div>
 						</div>
@@ -461,27 +464,20 @@ export default function QuizSlider() {
 									type={"checkbox"}
 									name={'question10'}
 									id={`q-10-a-3`}
-									label={'Extending the lifespan of devices before upgrading'}
-								/>
-								<Form.Check
-									value={5}
-									type={"checkbox"}
-									name={'question10'}
-									id={`q-10-a-4`}
 									label={'Participating in lithium battery recycling programs'}
 								/>
 								<Form.Check
 									value={5}
 									type={"checkbox"}
 									name={'question10'}
-									id={`q-10-a-5`}
+									id={`q-10-a-4`}
 									label={'Purchasing devices from environmentally conscious brands'}
 								/>
 								<Form.Check
 									value={5}
 									type={"checkbox"}
 									name={'question10'}
-									id={`q-10-a-6`}
+									id={`q-10-a-5`}
 									label={'Educating others about the environmental impact of lithium extraction and disposal'}
 								/>
 							</div>
@@ -490,14 +486,14 @@ export default function QuizSlider() {
 							<h3>How do you see the use of lithium batteries in technology evolving in the future?</h3>
 							<div key={`default-radio`} className="mb-3">
 								<Form.Check
-									value={-5}
+									value={0}
 									type={"radio"}
 									id={`q-11-a-1`}
 									name={"question11"}
 									label={`Becoming less prevalent`}
 								/>
 								<Form.Check
-									value={0}
+									value={2.5}
 									type={"radio"}
 									id={`q-11-a-2`}
 									name={"question11"}
@@ -542,7 +538,7 @@ function Controls({ incrementSlide, decrementSlide, index, slideCount, handleSub
 	return (
 		<>
 			<button className="CarouselNextButton CarouselControl" onClick={incrementSlide} type="button">Next</button>
-			<button className="Carouselq-10-a-5Button CarouselControl" onClick={decrementSlide} type="button">Back</button>
+			<button className="CarouselPrevButton CarouselControl" onClick={decrementSlide} type="button">Back</button>
 		</>
 	);
 }

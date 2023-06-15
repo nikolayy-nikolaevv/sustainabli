@@ -14,4 +14,4 @@
 ### Packages
 #### 1. [mysql2](https://www.npmjs.com/package/mysql2)
 #### 2. [cors](https://www.npmjs.com/package/cors)
-#### 2. [dotenv](https://www.npmjs.com/package/dotenv)
+#### 3. [dotenv](https://www.npmjs.com/package/dotenv)
