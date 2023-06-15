@@ -419,7 +419,7 @@ body {
 
 .Amogu {
 	position: absolute;
-	top: 45vh;
+	bottom: 23vh;
 	left: 15.2vw;
 	pointer-events: none;
 }
