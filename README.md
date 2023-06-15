@@ -2,7 +2,6 @@
 ## [Figma](https://www.figma.com/file/peDxkBeARGZ37LKWYj38Lh/SustainabLi)
 
 # Technologies
-
 ## [React](https://react.dev)
 ### Packages
 #### 1. [Recharts](https://recharts.org/en-US/api)
@@ -15,3 +14,7 @@
 #### 1. [mysql2](https://www.npmjs.com/package/mysql2)
 #### 2. [cors](https://www.npmjs.com/package/cors)
 #### 3. [dotenv](https://www.npmjs.com/package/dotenv)
+
+# Hosting
+## [Netlify](https://www.netlify.com) - Website
+## [Planetscale](https://planetscale.com) - Datebank
