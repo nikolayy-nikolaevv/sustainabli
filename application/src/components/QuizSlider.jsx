@@ -430,7 +430,7 @@ export default function QuizSlider() {
 									className={"mx-5"}
 									inline
 									type={"radio"}
-									id={`q-9-a-4`}
+									id={`q-9-a-5`}
 									name={"question9"}
 									label={`Very unwilling`}
 								/>
@@ -481,7 +481,7 @@ export default function QuizSlider() {
 									value={5}
 									type={"checkbox"}
 									name={'question10'}
-									id={`q-10-a-5`}
+									id={`q-10-a-6`}
 									label={'Educating others about the environmental impact of lithium extraction and disposal'}
 								/>
 							</div>
@@ -542,7 +542,7 @@ function Controls({ incrementSlide, decrementSlide, index, slideCount, handleSub
 	return (
 		<>
 			<button className="CarouselNextButton CarouselControl" onClick={incrementSlide} type="button">Next</button>
-			<button className="CarouselPrevButton CarouselControl" onClick={decrementSlide} type="button">Back</button>
+			<button className="Carouselq-10-a-5Button CarouselControl" onClick={decrementSlide} type="button">Back</button>
 		</>
 	);
 }
