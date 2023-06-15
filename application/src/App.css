@@ -30,7 +30,7 @@ body {
 .LandingHeader {
 	padding-top: 30vh;
 	width: 100%;
-	position: absolute;
+	position: relative;
 }
 
 .LandingHeaderTitle {
@@ -415,4 +415,16 @@ body {
 .form-check-label{
 	text-align: left !important;
 	display: flex;
+}
+
+.Amogu {
+	position: absolute;
+	top: 22.2vw;
+	left: 15.2vw;
+	pointer-events: none;
+}
+
+.AmoguPic {
+	width: 4vw;
+	height: 4vw;
 }
