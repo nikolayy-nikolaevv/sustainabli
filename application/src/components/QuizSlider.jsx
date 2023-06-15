@@ -14,23 +14,25 @@ export default function QuizSlider() {
 		setIndex(index - 1);
 	};
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 		const formFields = document.querySelectorAll('.form-check-input:checked');
-		var sum = 0;
+		var result = 0;
 
 		formFields.forEach(field => {
-			sum += field.checked ? Number(field.value) : 0;
+			result += field.checked ? Number(field.value) : 0;
 		});
 
-		fetch("http://localhost:8000/survey", {
+		const postResult = await fetch("https://sustainabli-backend.netlify.app/.netlify/functions/server/survey", {
 			method: "POST",
-			body: JSON.stringify({"result": sum}),
+			body: JSON.stringify({"result": result}),
 			headers: {
 				"Accept": "application/json",
 				"Content-Type": "application/json",
 			}
-		});
+		}).then(response => response.json());
+
+		console.log("Your result: " + result + " Average: " + postResult.average )
 	}
 
 	useEffect(() => {
