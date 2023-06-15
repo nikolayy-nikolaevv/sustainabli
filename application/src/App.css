@@ -353,24 +353,29 @@ body {
 	display: grid;
 	place-content: center;
 	user-select: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .BubbleActive {
 	background: radial-gradient(50% 50% at 50% 50%, #B242E3 0%, #A553CC 33.33%, #6153BD 100%);
 	animation: bubble 3s linear infinite;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @keyframes bubble {
 	0% {
 		transform: rotate(0deg);
+		scale: 1.1;
 	}
 
 	50% {
 		transform: rotate(10deg);
+		scale: 1.2;
 	}
 
 	100% {
 		transform: rotate(0deg);
+		scale: 1.1;
 	}
 }
 
