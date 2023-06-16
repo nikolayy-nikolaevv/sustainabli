@@ -5,12 +5,15 @@ import { Form } from "react-bootstrap";
 export default function QuizSlider() {
 	const [index, setIndex] = useState(0);
 	const [slideCount, setSlideCount] = useState(null);
+	const [personalResult, setPersonalResult] = useState(null);
+	const [averageResult, setAverageResult] = useState(null);
+	const [percentile, setPercentile] = useState(null);
 
-	const incrementSlide = (selectedIndex, e) => {
+	const incrementSlide = () => {
 		setIndex(index + 1);
 	};
 
-	const decrementSlide = (selectedIndex, e) => {
+	const decrementSlide = () => {
 		setIndex(index - 1);
 	};
 
@@ -23,16 +26,21 @@ export default function QuizSlider() {
 			result += field.checked ? Number(field.value) : 0;
 		});
 
-		const postResult = await fetch("https://sustainabli-backend.netlify.app/.netlify/functions/server/survey", {
+		await fetch("https://sustainabli-backend.netlify.app/.netlify/functions/server/survey", {
+			// await fetch("http://localhost:8888/.netlify/functions/server/survey", {
 			method: "POST",
-			body: JSON.stringify({"result": result}),
+			body: JSON.stringify({ "result": result }),
 			headers: {
 				"Accept": "application/json",
 				"Content-Type": "application/json",
 			}
-		}).then(response => response.json());
-
-		console.log("Your result: " + result + " Average: " + postResult.average )
+		}).then(response => response.json())
+			.then(data => {
+				setAverageResult(data.average);
+				setPercentile(data.percentile);
+				setPersonalResult(result);
+				setIndex(index + 1);
+			});
 	}
 
 	useEffect(() => {
@@ -509,6 +517,15 @@ export default function QuizSlider() {
 						</div>
 						<Controls incrementSlide={incrementSlide} decrementSlide={decrementSlide} index={index} slideCount={slideCount} />
 					</Carousel.Item>
+					<Carousel.Item className="CarouselResult">
+						<div className="QuizResult">
+							<h2>Your result:</h2>
+							<h2>{personalResult}</h2>
+							<h2>Average result:</h2>
+							<h2>{averageResult}</h2>
+							<h2>You are better that {percentile}% of other people that have participated.</h2>
+						</div>
+					</Carousel.Item>
 				</Carousel>
 			</Form>
 		</div>
@@ -525,7 +542,7 @@ function Controls({ incrementSlide, decrementSlide, index, slideCount }) {
 		);
 	}
 
-	if (index === slideCount) {
+	if (index === slideCount - 1) {
 		return (
 			<>
 				<button className="CarouselPrevButton CarouselControl" onClick={decrementSlide} type="button">Back</button>

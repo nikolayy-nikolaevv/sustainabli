@@ -494,3 +494,10 @@ input[type="radio"]:active {
 	background-color: #9587E8;
 	border: 1px solid #B1A8EA;
 }
+
+.CarouselResult {
+	background-color: #F2B34A;
+	color: #4A456A;
+	text-align: center;
+	border-radius: 5px;
+}
