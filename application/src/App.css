@@ -381,6 +381,8 @@ body {
 
 .AnimationContainer {
 	overflow: hidden;
+	padding-bottom: 20vh;
+	padding-top: 20vh;
 }
 
 .carousel-item {

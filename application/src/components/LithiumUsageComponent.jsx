@@ -42,7 +42,7 @@ export default function LithiumUsageComponent() {
 	return (
 		<div id="uses-of-lithium" className='ChartContainer Anchor'>
 			<div className="ChartTitle" >
-				<p>What exactly is Lithium used for?</p>
+				<p>Uses of Lithium</p>
 			</div>
 			<ResponsiveContainer height="70%" className="Chart">
 				<PieChart>
