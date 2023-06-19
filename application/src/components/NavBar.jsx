@@ -8,7 +8,7 @@ export default function NavBar({ logo }) {
 	useEffect(() => {
 		window.addEventListener("scroll", function (event) {
 			const scrollPos = window.scrollY;
-			const batteryProgress = 15 + scrollPos / (document.body.scrollHeight / 100);
+			const batteryProgress = 5 + scrollPos / (document.body.scrollHeight / 100);
 			batteryLevel.current.style.width = batteryProgress + "%";
 			const colorStart = "rgb(" + (237 - batteryProgress * 1.5) + "," + (118 + batteryProgress * 0.4) + ",80)";
 			const colorEnd = "rgb(" + (242 - batteryProgress * 1.5) + "," + (179 + batteryProgress * 0.4) + ",74)";

@@ -65,6 +65,7 @@ body {
 	width: auto;
 	height: 17vw;
 	user-select: none;
+	cursor: pointer;
 }
 
 .LandingHeaderSubTitleText {
@@ -360,7 +361,9 @@ body {
 	background: radial-gradient(50% 50% at 50% 50%, #B242E3 0%, #A553CC 33.33%, #6153BD 100%);
 	animation: bubble 3s linear infinite;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
 }
+
 
 @keyframes bubble {
 	0% {
