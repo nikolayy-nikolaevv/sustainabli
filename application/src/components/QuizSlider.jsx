@@ -50,11 +50,21 @@ export default function QuizSlider() {
 
 
 	return (
+		<div className="QuizDescription">
+			<br></br>
+			<h1 id="QuizText">Take part in our survey and find out how you compare to others! </h1>
+			<br></br>
+
+
+
 		<div id="participate" className='QuizSliderContainer' >
 			<Form onSubmit={handleSubmit}>
 				<Carousel activeIndex={index} className='QuizSlider' interval={null} slide={false}>
 					<Carousel.Item>
+
 						<div className="QuizQuestion">
+
+							<br></br>
 							<h3>Which of the following technology products have you purchased that use lithium batteries?</h3>
 							<p>(Select all that apply)</p>
 							<div key={`default-checkbox`}>
@@ -101,7 +111,7 @@ export default function QuizSlider() {
 								<Form.Check
 									value={0}
 									inline
-									className={"mx-5"}
+									className={"mx-4"}
 									type={"radio"}
 									id={`q-2-a-1`}
 									name={"question2"}
@@ -110,7 +120,7 @@ export default function QuizSlider() {
 								<Form.Check
 									value={2.5}
 									inline
-									className={"mx-5"}
+									className={"mx-4"}
 									type={"radio"}
 									id={`q-2-a-2`}
 									name={"question2"}
@@ -119,7 +129,7 @@ export default function QuizSlider() {
 								<Form.Check
 									value={5}
 									inline
-									className={"mx-5"}
+									className={"mx-4"}
 									type={"radio"}
 									id={`q-2-a-3`}
 									name={"question2"}
@@ -128,7 +138,7 @@ export default function QuizSlider() {
 								<Form.Check
 									value={7.5}
 									inline
-									className={"mx-5"}
+									className={"mx-4"}
 									type={"radio"}
 									id={`q-2-a-4`}
 									name={"question2"}
@@ -144,7 +154,7 @@ export default function QuizSlider() {
 							<div key={'inline-radio'} className="my-4 radio-inline">
 								<Form.Check
 									value={0}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-3-a-1`}
@@ -153,7 +163,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={2.5}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-3-a-2`}
@@ -162,7 +172,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={5}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-3-a-3`}
@@ -171,7 +181,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={7.5}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-3-a-4`}
@@ -180,7 +190,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={10}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-3-a-5`}
@@ -194,7 +204,7 @@ export default function QuizSlider() {
 							<div key={'inline-radio'} className="my-4 radio-inline">
 								<Form.Check
 									value={0}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-4-a-1`}
@@ -203,7 +213,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={2.5}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-4-a-2`}
@@ -212,7 +222,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={5}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-4-a-3`}
@@ -221,7 +231,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={7.5}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-4-a-4`}
@@ -230,7 +240,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={10}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-4-a-5`}
@@ -244,7 +254,7 @@ export default function QuizSlider() {
 							<div key={'inline-radio'} className="my-4 radio-inline">
 								<Form.Check
 									value={0}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-5-a-1`}
@@ -253,7 +263,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={2.5}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-5-a-2`}
@@ -262,7 +272,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={5}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-5-a-3`}
@@ -271,7 +281,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={7.5}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-5-a-4`}
@@ -280,7 +290,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={10}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-5-a-5`}
@@ -360,7 +370,7 @@ export default function QuizSlider() {
 							<div key={'inline-radio'} className="my-4 radio-inline">
 								<Form.Check
 									value={0}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-8-a-1`}
@@ -369,7 +379,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={2.5}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-8-a-2`}
@@ -378,7 +388,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={5}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-8-a-3`}
@@ -387,7 +397,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={7.5}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-8-a-4`}
@@ -401,7 +411,7 @@ export default function QuizSlider() {
 							<div key={'inline-radio'} className="my-4 radio-inline">
 								<Form.Check
 									value={0}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-9-a-1`}
@@ -410,7 +420,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={2.5}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-9-a-2`}
@@ -419,7 +429,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={5}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-9-a-3`}
@@ -428,7 +438,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={7.5}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-9-a-4`}
@@ -437,7 +447,7 @@ export default function QuizSlider() {
 								/>
 								<Form.Check
 									value={10}
-									className={"mx-5"}
+									className={"mx-4"}
 									inline
 									type={"radio"}
 									id={`q-9-a-5`}
@@ -523,12 +533,15 @@ export default function QuizSlider() {
 							<h2>{personalResult}</h2>
 							<h2>Average result:</h2>
 							<h2>{averageResult}</h2>
-							<h2>You are better that {percentile}% of other people that have participated.</h2>
+							<br></br>
+							<h2>You are better than {percentile}% compared to other users who participated in our survey.</h2>
 						</div>
 					</Carousel.Item>
 				</Carousel>
 			</Form>
 		</div>
+		</div>
+
 
 	);
 }

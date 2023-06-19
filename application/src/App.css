@@ -400,34 +400,57 @@ body {
 .carousel-inner {
 	height: 100%;
 }
+.QuizDescription {
+	z-index: 1;
+	position: absolute;
+	color: #F2B34A;
+	background-color: #6E65AA;
+	height: auto;
+	width: 95%;
+	font-family: 'Lexend';
+	font-weight: bold;
+	font-size: 2vw;
+	text-align: center;
+	margin: 2vh;
+	border-radius: 5px;
+	overflow: hidden;
+	padding-bottom: 4vh;
+
+
+}
+#QuizText{
+	border: 10px;
+}
 
 .QuizSlider {
 	font-family: 'Comfortaa';
 	font-style: normal;
 	color: #ffffff;
-	opacity: 0.8;
 	background-color: rgb(46, 43, 66, 0.75);
-	height: 75vh;
+	height: auto;
 	margin: 0 auto;
-	width: 90%;
+	width: 93%;
 	position: relative;
 	border-radius: 5px;
+	z-index: 2;
+	opacity: 1;
 }
 
 .QuizQuestion {
 	margin: 2.5vw 0;
+	width: 100%;
 }
 
 .CarouselNextButton {
 	position: absolute;
-	margin: 3vw;
+	margin: 1vw;
 	bottom: 0;
 	right: 0;
 }
 
 .CarouselPrevButton {
 	position: absolute;
-	margin: 3vw;
+	margin: 1vw;
 	bottom: 0;
 	left: 0;
 }
@@ -465,12 +488,14 @@ body {
 .form-check-label {
 	display: flex;
 	font-size: 1vw;
+	margin: 0.2vw 0;
 	margin-left: 1vw;
+	align-content: baseline;
 }
 
 .form-check {
 	display: flex;
-	margin: 0.2vw 0;
+
 	margin-left: 1.2vw;
 }
 
@@ -480,6 +505,8 @@ body {
 
 input[type="checkbox"],
 input[type="radio"] {
+	margin: auto 0;
+	margin-top: 3px;
 	width: 1.2vw;
 	height: 1.2vw;
 	border: 1px solid #B1A8EA;
